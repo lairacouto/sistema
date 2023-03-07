@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gerencie</title>
-    <link rel="stylesheet" href="stock.css">
+    <title>Gerencie/User</title>
+    <link rel="stylesheet" href="user.css">
 </head>
 
 <body>
@@ -20,22 +20,28 @@
             <h3>Gerencie <span>Sistema</span></h3>
         </div>
         <div class="right">
-            <a href="login.html" class="sair_btn">Sair</a>
+            <a href="../LOGIN/login.html" class="sair_btn">Sair</a>
         </div>
     </header>
 
     <div class="sidebar">
         <a href="#"><ion-icon name="cash-outline"></ion-icon><span>Caixa</span></a>
-        <a href="item.html"><ion-icon name="barcode-sharp"></ion-icon><span>Itens</span></a>
-        <a href="#"><ion-icon name="cube-outline"></ion-icon><span>Estoque</span></a>
+        <a href="#"><ion-icon name="barcode-sharp"></ion-icon><span>Itens</span></a>
+        <a href="../STOCK/stock.html"><ion-icon name="cube-outline"></ion-icon><span>Estoque</span></a>
         <a href="#"><ion-icon name="pie-chart-outline"></ion-icon><span>Relatórios</span></a>
+        <a href="../USER/user.html"><ion-icon name="person-outline"></ion-icon><span>Usuários</span></a>
     </div>
 
-    <main>
-    
-        <div class="content">
-            <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam consequatur distinctio voluptatum sunt nam culpa, mollitia voluptatibus et, numquam eos rem temporibus molestiae voluptas rerum optio. Itaque eligendi magnam ratione.</h3>
-        </div>
+    <main>    
+        <section class="content">
+            <div class="tit">
+                <h1 class="content-h1">Usuários</h1>
+            </div>
+            <div class="edit">
+                <a href="add.html"><ion-icon name="add-circle-outline"></ion-icon></a>
+                <a href="#"><ion-icon name="create-outline"></ion-icon></a>
+            </div>
+        </section>
     </main>
 
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>

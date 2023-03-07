@@ -14,7 +14,7 @@ header {
     height: 30px;
 }
 
-.left h3 {
+.left a {
     color: #fff;
     margin: 0;
     text-transform: uppercase;
@@ -115,9 +115,17 @@ label #sidebar_btn:hover {
 }
 
 .content {
-    background: url(menu.jpg) no-repeat;
-    background-size: cover;
-    height: 100vh;
+    padding: 100px;
+    margin-left: 200px;
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+    color: #193446;
+}
+
+.edit ion-icon{
+    color: #154563;
+    font-size: 50px;
 }
 
 #check {

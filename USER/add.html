@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerencie/User</title>
+    <link rel="stylesheet" href="add.css">
+</head>
+
+<body>
+
+    <input type="checkbox" id="check">
+
+    <header>
+        <label for="check">
+            <ion-icon name="menu-outline" id="sidebar_btn"></ion-icon>
+        </label>
+        <div class="left">
+            <h3>Gerencie <span>Sistema</span></h3>
+        </div>
+        <div class="right">
+            <a href="login.html" class="sair_btn">Sair</a>
+        </div>
+    </header>
+
+    <div class="sidebar">
+        <a href="#"><ion-icon name="cash-outline"></ion-icon><span>Caixa</span></a>
+        <a href="#"><ion-icon name="barcode-sharp"></ion-icon><span>Itens</span></a>
+        <a href="../STOCK/stock.html"><ion-icon name="cube-outline"></ion-icon><span>Estoque</span></a>
+        <a href="#"><ion-icon name="pie-chart-outline"></ion-icon><span>Relatórios</span></a>
+        <a href=".../USER/user.html"><ion-icon name="person-outline"></ion-icon><span>Usuários</span></a>
+    </div>
+
+    <main>    
+        <section class="content">
+            <div class="tit">
+                <h1 class="content-h1">Cadastrar Usuário</h1>
+            </div>
+        </section>
+    </main>
+
+        <section class="add">
+            <form class="add-input">
+                <input type="text" name="nome" placeholder="Nome do usuário" autofocus>
+                <input type="password" name="senha" placeholder="Sua senha">
+                <input type="password" name="senha" placeholder="Confirmar senha">
+                <input type="submit" value="Cadastrar" id="button">
+            </form>
+        </section>
+
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    
+</body>
+</html>
