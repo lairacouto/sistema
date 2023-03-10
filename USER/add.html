@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -32,7 +33,7 @@
         <a href="../USER/user.html"><ion-icon name="person-outline"></ion-icon><span>Usuários</span></a>
     </div>
 
-    <main>    
+    <main>
         <section class="content">
             <div class="tit">
                 <h1 class="content-h1">Cadastrar Usuário</h1>
@@ -40,18 +41,25 @@
         </section>
     </main>
 
-        <section class="add">
-            <form class="add-input">
-                <input type="text" name="nome" placeholder="Nome do usuário" autofocus>
-                <input type="password" name="senha" placeholder="Sua senha">
-                <input type="password" name="senha" placeholder="Confirmar senha">
-                <input type="submit" value="Cadastrar" id="button">
-            </form>
-        </section>
+    <section class="add">
+        <form class="add-input" >
+            <input type="text" id="login" name="nome" placeholder="Nome do usuário" autofocus>
+            <input type="password" id="senha1" name="senha" placeholder="Sua senha">
+            <input type="password" id="senha2" name="senha" placeholder="Confirmar senha">
+            <input type="button" value="Cadastrar" id="button" onclick="createUser()">
+        </form>
+    </section>
 
 
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-    
+    <script src="../utils/config.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.13.5/xlsx.full.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.13.5/jszip.js"></script>
+    <script src="./add.js"></script>
+
 </body>
+
 </html>
