@@ -14,7 +14,7 @@ header {
     height: 30px;
 }
 
-.left a {
+.left h3 {
     color: #fff;
     margin: 0;
     text-transform: uppercase;
@@ -131,3 +131,4 @@ label #sidebar_btn:hover {
 #check {
     display: none;
 }
+

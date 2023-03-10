@@ -135,9 +135,9 @@ label #sidebar_btn:hover {
 .add-input {
     display: flex;
     flex-direction: column;
-    padding: 100px;
-    margin-top: -100px;
-    margin-left: 200px;
+    margin-right: 750px;
+    margin-left: 300px;
+    margin-top: -75px;
     border: none;
     outline: none;
     border-radius: 5px;
@@ -149,3 +149,27 @@ input::placeholder {
     font-size: 14px;
     font-family: 'Poppins', sans-serif;
 }
+
+#button {
+    font-family: 'Poppins', sans-serif;
+    display: block;
+    text-transform: uppercase;
+    font-weight: bold;
+    background-color: #51b3ec;
+    cursor: pointer;
+    width: 40%;
+}
+
+#button:hover {
+    background-color: #4a9fcf;
+}
+
+.add-input input {
+    margin-top: 15px;
+    height: 35px;
+    outline: none;
+    border-radius: 5px;
+    padding-left: 10px;
+}
+
+
