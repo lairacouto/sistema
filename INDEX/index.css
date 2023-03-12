@@ -90,3 +90,71 @@ header {
     color: #154563;
     font-size: 50px;
 }
+
+/* User */
+
+.content-user {
+    padding-top: 50px;
+    padding-left: 300px;
+    padding-right: 50px;
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+    color: #193446;
+}
+
+.edit-user ion-icon{
+    color: #154563;
+    font-size: 50px;
+}
+
+/* Add */
+
+.content-add {
+    padding-top: 50px;
+    padding-left: 300px;
+    padding-right: 50px;
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+    color: #193446;
+}
+
+.add-input {
+    display: flex;
+    flex-direction: column;
+    margin-right: 750px;
+    margin-left: 300px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    gap: 10px;
+}
+
+input::placeholder {
+    color: #193446;
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+}
+
+#button {
+    font-family: 'Poppins', sans-serif;
+    display: block;
+    text-transform: uppercase;
+    font-weight: bold;
+    background-color: #51b3ec;
+    cursor: pointer;
+    width: 40%;
+}
+
+#button:hover {
+    background-color: #4a9fcf;
+}
+
+.add-input input {
+    margin-top: 15px;
+    height: 35px;
+    outline: none;
+    border-radius: 5px;
+    padding-left: 10px;
+}
