@@ -14,13 +14,6 @@ header {
     height: 30px;
 }
 
-.left h3 {
-    color: #fff;
-    margin: 0;
-    text-transform: uppercase;
-    font-size: 22px;
-    font-weight: 800;
-}
 
 .left span {
     color: #51b3ec;
@@ -114,8 +107,8 @@ label #sidebar_btn:hover {
     width: 80px;
 }
 
-.content {
-    background: url(../IMG/menu.jpg) no-repeat;
+.content-item {
+    background-image: url(../IMG/menucomp.jpg);
     background-size: cover;
     height: 100vh;
 }
