@@ -38,10 +38,44 @@
                 <a href="add.html"><ion-icon name="add-circle-outline"></ion-icon></a>
             </div>
         </section>
+
+        <section class="list-user">
+            <ul id="lista">
+            </ul>            
+            
+            <script>
+                let lista = [
+                    {
+                        id: 1,
+                        nome: "Teste"
+                    },
+                    {
+                        id: 2,
+                        nome: "Teste"
+                    },
+                    {
+                        id: 3,
+                        nome: "Teste"
+                    },
+                    {   
+                        id: 4,
+                        nome: "Teste"
+                    },
+                ];
+                document.getElementById('lista').innerHTML=
+                lista.map(item=>`<li>${item}</li>`).join('')
+                ;
+            </script>
+                
+        </section>
+
     </main>
 
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     
 </body>
+
+    <script src="user.js"></script>
+    
 </html>
