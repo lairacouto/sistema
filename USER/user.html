@@ -43,28 +43,61 @@
             <ul id="lista">
             </ul>            
             
+            <div id="result"></div>
+
             <script>
-                let lista = [
-                    {
-                        id: 1,
-                        nome: "Teste"
-                    },
-                    {
-                        id: 2,
-                        nome: "Teste"
-                    },
-                    {
-                        id: 3,
-                        nome: "Teste"
-                    },
-                    {   
-                        id: 4,
-                        nome: "Teste"
-                    },
+
+                const members = [
+                    { id: 1, nome: "Laíra" },
+                    { id: 2, nome: "Caio" },
+                    { id: 3, nome: "Cleiton" },
+                    { id: 4, nome: "Mércia" },
                 ];
-                document.getElementById('lista').innerHTML=
-                lista.map(objeto=>`<li>${objeto.nome}</li>`).join('')
-                ;
+
+                drawTable(members);
+
+                function drawTable(members) {
+
+                    const table = document.createElement("table");
+
+                    const thead = document.createElement("thead");
+
+                    const tr = document.createElement("tr");
+
+                    const thForId = document.createElement("th");
+                    thForId.innerText = "ID";
+
+                    const thForName = document.createElement("th");
+                    thForName.innerText = "Nome";
+
+                    tr.append(thForId, thForName);
+
+                    thead.appendChild(tr);
+
+                    table.appendChild(thead);
+
+                    const tbody = document.createElement("tbody");
+                    table.appendChild(tbody);
+
+                    for (let member of members) {
+
+                        const tr = document.createElement("tr");
+
+                        const tdForId = document.createElement("td");
+                        tdForId.innerText = member.id;
+                        tr.appendChild(tdForId);
+
+                        const tdForName = document.createElement("td");
+                        tdForName.innerText = member.nome;
+                        tr.appendChild(tdForName);
+                        tbody.appendChild(tr);
+                    }
+
+                    result.appendChild(table);
+                }
+
+
+
             </script>
                 
         </section>
