@@ -113,7 +113,7 @@ header {
 }
 
 
-/* Add */
+/* AddUser */
 
 .content-add {
     padding-top: 50px;
@@ -130,7 +130,7 @@ header {
     flex-direction: column;
     margin-right: 750px;
     margin-left: 300px;
-    border: none;
+    border: none;s
     outline: none;
     border-radius: 5px;
     gap: 10px;
@@ -162,4 +162,16 @@ input::placeholder {
     outline: none;
     border-radius: 5px;
     padding-left: 10px;
+}
+
+/*Stok*/
+
+.content-stok {
+    padding-top: 50px;
+    padding-left: 300px;
+    padding-right: 50px;
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+    color: #193446;
 }
