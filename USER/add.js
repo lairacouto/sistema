@@ -9,14 +9,15 @@ const createUser = function () {
         "senha": senha1
     }
 
-
     if (senha1 == senha2){
         $.ajax({
             type: 'POST',
             data: dados,
-            url: USER_DB,
-            success: () => { alert(`Usuário "${login}" cadastrado com sucesso!`)},
-            error: () => {alert("Uusário não cadastrado, verifique as informações!")}
+            url: 'http://192.168.1.136:3000/api/usuario',
+            success: () => {alert(`Usuário "${login}" cadastrado com sucesso!`)},
+            error: () => {alert("Usuário não cadastrado, verifique as informações!")}
         })
+    }else {
+        alert ("As senhas devem ser iguais nos dois campos!")
     }
 }
