@@ -1,1 +1,2 @@
-const URLDB = 'http://192.168.1.139:3000/api/'
+//const URL = 'localhost:3000'
+//const URLDB = URL + '/api/'
